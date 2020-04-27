@@ -11,8 +11,17 @@ namespace FizzBuzzUnitTests
         public void ShouldProcessANumber()
         {
             FizzBuzz fizzBuzz = new FizzBuzz();
-            String output = fizzBuzz.ProcessNumber(1);
-            Assert.AreEqual(output, "1");
+            Assert.AreEqual("1", fizzBuzz.ProcessNumber(1));
+            Assert.AreEqual("2", fizzBuzz.ProcessNumber(2));
+            Assert.AreEqual("4", fizzBuzz.ProcessNumber(4));
+        }
+        
+        [TestMethod]
+        public void ShouldProcessANumberDivisibleBy3()
+        {
+            FizzBuzz fizzBuzz = new FizzBuzz();
+            String output = fizzBuzz.ProcessNumber(3);
+            Assert.AreEqual("Fizz", output);
         }
     }
 }

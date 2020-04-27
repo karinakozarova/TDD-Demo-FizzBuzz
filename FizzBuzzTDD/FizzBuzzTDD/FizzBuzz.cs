@@ -8,9 +8,12 @@ namespace FizzBuzzTDD
 {
     public class FizzBuzz
     {
+        const string delimetedByThreeString = "Fizz";
+        
         public string ProcessNumber(int value)
         {
-            return 1.ToString();
+            if (value % 3 == 0) return delimetedByThreeString;
+            else return value.ToString();
         }
     }
 }
