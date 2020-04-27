@@ -31,5 +31,14 @@ namespace FizzBuzzUnitTests
             Assert.AreEqual("Buzz", fizzBuzz.ProcessNumber(5));
             Assert.AreEqual("Buzz", fizzBuzz.ProcessNumber(10));
         }
+
+
+        [TestMethod]
+        public void ShouldProcessANumberDivisibleBy5And3()
+        {
+            FizzBuzz fizzBuzz = new FizzBuzz();
+            Assert.AreEqual("FizzBuzz", fizzBuzz.ProcessNumber(15));
+            Assert.AreEqual("FizzBuzz", fizzBuzz.ProcessNumber(30));
+        }
     }
 }
